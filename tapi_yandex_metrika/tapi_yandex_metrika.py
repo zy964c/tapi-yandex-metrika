@@ -22,7 +22,7 @@ class YandexMetrikaManagementClientAdapter(JSONAdapterMixin, TapiAdapter):
     resource_mapping = MANAGEMENT_RESOURCE_MAPPING  # карта ресурсов
 
     def get_api_root(self, api_params):
-        return "https://api-metrika.yandex.net/"
+        return "https://api-metrika.yandex.net/analytics/v3/data/ga"
 
     def get_request_kwargs(self, api_params, *args, **kwargs):
         """
