@@ -306,7 +306,7 @@ class YandexMetrikaStatsClientAdapter(YandexMetrikaManagementClientAdapter):
         """
         # request_kwargs_list может содержать наборы параметров запросов, которые еще не сделаны.
         # Поэтому в него нужно добавлять новые, а не заменять.
-        total_rows = int(current_result["total_rows"])
+        total_rows = int(current_result["sample_size"])
         sampled = current_result["sampled"]
 
         logging.info("Наличие семплирования: " + str(sampled))

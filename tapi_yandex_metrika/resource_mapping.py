@@ -2,7 +2,7 @@
 
 STATS_RESOURCE_MAPPING = {
     "stats": {
-        "resource": "stat/v1/data",
+        "resource": "stat/v1/data/",
         "docs": "https://yandex.ru/dev/metrika/doc/api2/api_v1/intro-docpage/",
         "params": [
             "direct_client_logins=<string,_string,...>",
